@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BuildDb>
+    <Tool>
+        <Name>linker</Name>
+        <Parent>
+            <Path>C:\Users\Interrupt\Dropbox\WorkSpace\Embedded\Mastering_STM32\STM32F411\SPI_Interrupt_API\SPI_Interrupt_API\EWARM\SPI_Interrupt_API\Exe\SPI_Interrupt_API.out</Path>
+            <Output>
+                <Path>C:\Users\Interrupt\Dropbox\WorkSpace\Embedded\Mastering_STM32\STM32F411\SPI_Interrupt_API\SPI_Interrupt_API\EWARM\SPI_Interrupt_API\List\SPI_Interrupt_API.map</Path>
+            </Output>
+        </Parent>
+    </Tool>
+</BuildDb>

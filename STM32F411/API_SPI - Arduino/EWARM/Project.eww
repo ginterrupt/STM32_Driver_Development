@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workspace>
     <project>
+        <path>$WS_DIR$\..\..\course\002\API.ewp</path>
+    </project>
+    <project>
         <path>$WS_DIR$\Backup of API.ewp</path>
+    </project>
+    <project>
+        <path>$WS_DIR$\..\..\course\001\led.ewp</path>
     </project>
     <batchBuild />
 </workspace>

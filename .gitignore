@@ -1,0 +1,20 @@
+# Compiled binaries, logs, and temporary files
+*.o
+*.bin
+*.elf
+*.hex
+*.map
+*.out
+*.obj
+*.bak
+*.~*
+*.dep
+thumbs.db
+
+# IAR specific directories and files
+**/settings/
+**/Exe/*.sim
+**/Obj/
+Debug/
+Release/
+Backup*

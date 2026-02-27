@@ -48,6 +48,7 @@ void SPI2_GPIOInits(void)
     GPIO_Init(&SPIPins);
 }
 
+
 void SPI2_Inits()
 {
     SPI_Handle_t SPI2Handle;
@@ -61,7 +62,9 @@ void SPI2_Inits()
     SPI2Handle.SPIConf.DFF = SPI_DFF_8;
     SPI2Handle.SPIConf.SSM = SPI_SSM_DI; // DI means disable so we choose hardware slave management
 
+
     SPI_Init(&SPI2Handle);
+
 
 }
 void GPIO_ButtonInit(void)
@@ -74,9 +77,12 @@ void GPIO_ButtonInit(void)
     btn.GPIO_PinConfig.GPIO_PinPuPdControl = GPIO_PD;
     btn.GPIO_PinConfig.GPIO_PinSpeed = GPIO_SPEED_FAST;
 
+
 	GPIO_Init(&btn);
 
+
 }
+
 
 int main()
 {
@@ -113,8 +119,10 @@ int main()
 		}
 		delay(1000000);
 
+
 		//enable the SPI2 peripheral
 		SPI_PeripheralControl(SPI2,ENABLE);
+
 
 		//first send length information
 		uint8_t dataLen = strlen(user_data);
@@ -123,8 +131,10 @@ int main()
 		//to send data
 		SPI_SendData(SPI2,(uint8_t*)user_data,strlen(user_data));
 
+
 		//lets confirm SPI is not busy
 		while( SPI_GetFlagStatus(SPI2,SPI_BUSY_FLAG) );
+
 
 		//Disable the SPI2 peripheral
 		SPI_PeripheralControl(SPI2,DISABLE);
@@ -133,7 +143,10 @@ int main()
     }
    
 
+
 }
    
+
+
 
 
